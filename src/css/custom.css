@@ -28,3 +28,12 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Overriding root Infima variables */
+[data-theme='light'] {
+  --ifm-color-primary: #3a9692; /* Softer teal */
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #b6f1da; /* Lighter, but still contrasting teal */
+}
