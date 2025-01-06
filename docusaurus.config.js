@@ -89,9 +89,9 @@ const config = {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'LearningsSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Learnings',
           },
           {to: 'blog', label: 'Blog', position: 'left'},
           {to: '/resume', label: 'Resume', position: 'left'},
@@ -104,7 +104,7 @@ const config = {
             title: 'Quick Links',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Learnings',
                 to: '/docs/quick-links',
               },
               {
