@@ -10,12 +10,10 @@ sidebar_position: 5
 The SOLID principles are a set of five design principles intended to make software designs more understandable, flexible, and maintainable. These principles are especially useful in object-oriented design and programming. Let's dive into each principle with explanations and examples.
 
 ## S - Single Responsibility Principle (SRP)
-
+>
 A class should have only one reason to change, meaning it should have only one job or responsibility. Ensure each class has only one responsibility.
-
+>
 **Refactoring Ideas**: Look for classes that handle more than one task, like managing data and handling UI. Break these classes into smaller classes, each with a single responsibility.
-
-### Example:
 
 ```python
 # Before applying SRP
@@ -49,9 +47,9 @@ class InvoiceRepository:
         pass
 ```
 ## O - Open/Closed Principle (OCP)
-
+>
 Software entities should be open for extension but closed for modification.
-
+>
 **Refactoring Ideas:** Look for if-else chains or switch statements. Use inheritance or interfaces to allow new functionality to be added without changing existing code.
 
 ```python
@@ -94,8 +92,9 @@ class AreaCalculator:
 ```
 
 ## L - Liskov Substitution Principle (LSP)
+>
 Objects of a superclass should be replaceable with objects of a subclass without affecting the correctness of the program.
-
+>
 **Refactoring Ideas:** Look for subclasses that override methods in a way that changes expected behavior. Redesign the class hierarchy or use interfaces to ensure correct substitutability.
 
 ```python
@@ -118,8 +117,9 @@ class Ostrich(Bird):
 ```
 
 ## I - Interface Segregation Principle (ISP)
+>
 Clients should not be forced to depend on interfaces they do not use.
-
+>
 **Refactoring Ideas:** Look for interfaces that have methods unused by some clients.
 Refactor: Break these interfaces into smaller, more specific ones.
 
@@ -157,8 +157,9 @@ class Robot(Workable):
 ```
 
 ## D - Dependency Inversion Principle (DIP)
+>
 High-level modules should not depend on low-level modules. Both should depend on abstractions.
-
+>
 **Refactoring Ideas:** Look for classes that directly instantiate other classes.
 Refactor: Use dependency injection or design patterns like Factory or Strategy to depend on abstractions.
 
