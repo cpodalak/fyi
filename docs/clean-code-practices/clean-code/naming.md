@@ -2,7 +2,7 @@
 slug: clean-code-naming
 title: Naming
 tags: [clean-code]
-sidebar_position: 1
+sidebar_position: 3
 ---
 
 Naming is a crucial aspect of writing clean code. It helps make your code more readable and understandable without requiring readers to dive into the details. Let's explore some guidelines.

@@ -2,7 +2,7 @@
 slug: clean-code-writing-functions
 title: Writing Functions
 tags: [clean-code]
-sidebar_position: 2
+sidebar_position: 4
 ---
 
 

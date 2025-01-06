@@ -2,7 +2,7 @@
 slug: solid-principles
 title: SOLID Principles
 tags: [clean-code]
-sidebar_position: 3
+sidebar_position: 5
 ---
 
 # SOLID Principles
