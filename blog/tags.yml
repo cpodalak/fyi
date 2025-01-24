@@ -1,0 +1,14 @@
+autosar:
+  label: AUTOSAR
+  permalink: /autosar
+  description: AUTOmotive Open System ARchitecture
+
+c:
+  label: C
+  permalink: /C
+  description: C language
+
+autosar-big-picture:
+  label: autosar-big-picture
+  permalink: /autosar-big-picture
+  description: Big picture of AUTOSAR
