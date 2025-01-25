@@ -5,7 +5,9 @@ tags: [clean-code]
 sidebar_position: 6
 ---
 
-## TL;DR on SOLID Principles + DRY
+Design principles intended to make software designs more understandable, flexible, and maintainable. It's that simple :wink:
+
+### TL;DR
 > - **Single Responsibility Principle:** One class, one job.
 > - **Open/Closed Principle:** Open for extension, closed for modification.
 > - **Liskov Substitution Principle:** Subtypes should be substitutable for their base types.
@@ -14,11 +16,6 @@ sidebar_position: 6
 > - **Don't Repeat Yourself:** Avoid code duplication
 
 ## SOLID Principles
-
-The SOLID principles are a set of five design principles intended to make software designs more understandable, flexible, and maintainable. These principles are especially useful in object-oriented design and programming.
-
-
-
 
 ### S - Single Responsibility Principle (SRP)
 >

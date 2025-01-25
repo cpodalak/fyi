@@ -5,6 +5,8 @@ tags: [clean-code]
 sidebar_position: 3
 ---
 
+Naming a variable or module or function is the hardest job, especially when you realize how incredibly important it is :satisfied:
+
 ### TL;DR
 > - Use descriptive names.
 > - Use adjectives to clarify.
@@ -48,9 +50,3 @@ sidebar_position: 3
 | Avoid mental mappings                                              | `i`, `j`, `k`                   | `index`, `count`                                                                      |
 | Don’t be overly clear                                              | `calculate_the_discount_amount()`| `calculate_discount()`                                                                |
 | Pick one word per concept                                          | `get_data()`, `retrieve_data()` | `fetch_data()`                                                                        |
-
-### **Name Casing**
-- **snake_case:** use for variables, functions and methods.
-- **camelCase:** use for variables, functions and methods.
-- **PascalCase:** use for classes.
-- **kebab-case:** use for custom HTML or XML elements.

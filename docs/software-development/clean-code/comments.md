@@ -5,10 +5,9 @@ tags: [clean-code]
 sidebar_position: 5
 ---
 
-# Comments
 While comments can be incredibly useful, they can also clutter your code if not used wisely. Often reviewers overlook comments as they seem to ease their review job.
 
-## TL;DR
+### TL;DR
 > - If you find yourself needing to write many comments, it may indicate poor design. Consider refactoring the code instead.
 > - Write self-explanatory code; comments should explain why, not what. 
 > - Use comments judiciously for complex logic, design choices, warnings, or legal notices. 

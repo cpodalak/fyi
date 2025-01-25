@@ -5,14 +5,13 @@ tags: [clean-code]
 sidebar_position: 4
 ---
 
-
-# Writing Functions
+## Writing Functions
 
 Functions are the building blocks of clean code. By following a set of simple yet powerful rules, you can write functions that are clear, concise, and maintainable. This guide provides detailed guidelines on how to write functions effectively, with Python examples to illustrate key points.
 
 In addition, functions are the "verbs" of your code, forming the actions of the system's narrative. Write them cleanly by keeping them small, focused, and well-named. Avoid unnecessary arguments, side effects, and redundancy. Above all, let your functions tell a clear story, one step at a time.
 
-## TL;DR
+### TL;DR
 > - Function should be small and do one thing.
 > - Use self-explanatory descriptive names.
 > - Keep the number of function arguments manageable, ideally limiting to 2, with a maximum of 3 in exceptional cases.
