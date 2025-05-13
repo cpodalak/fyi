@@ -53,21 +53,21 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl: `https://github.com/${organizationName}/${projectName}/tree/main/`,
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-           editUrl: `https://github.com/${organizationName}/${projectName}/tree/main/`,
-          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+//        blog: {
+//          showReadingTime: true,
+//          feedOptions: {
+//            type: ['rss', 'atom'],
+//            xslt: true,
+//          },
+//          // Please change this to your repo.
+//          // Remove this to remove the "edit this page" links.
+//           editUrl: `https://github.com/${organizationName}/${projectName}/tree/main/`,
+//          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+//          // Useful options to enforce blogging best practices
+//          onInlineTags: 'warn',
+//          onInlineAuthors: 'warn',
+//          onUntruncatedBlogPosts: 'warn',
+//        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -93,7 +93,7 @@ const config = {
             position: 'left',
             label: 'Learnings',
           },
-          {to: 'blog', label: 'Blog', position: 'left'},
+//          {to: 'blog', label: 'Blog', position: 'left'},
           {to: '/resume', label: 'Resume', position: 'left'},
         ],
       },
@@ -103,10 +103,10 @@ const config = {
           {
             title: 'Quick Links',
             items: [
-              {
-                 label: 'Blog',
-                 to: '/blog'
-              },
+//              {
+//                 label: 'Blog',
+//                 to: '/blog'
+//              },
               {
                 label: 'Resume',
                 to: '/resume'
