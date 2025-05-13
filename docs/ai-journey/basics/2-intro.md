@@ -2,7 +2,7 @@
 slug: ai-basics-intro
 title: Understanding AI
 tags: [ai]
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # Getting Started with AI: The Basics
