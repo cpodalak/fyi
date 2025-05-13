@@ -1,6 +1,6 @@
 ---
 slug: ai-basics-intro
-title: Understanding AI: A Human Guide
+title: Understanding AI
 tags: [ai]
 sidebar_position: 1
 ---
@@ -18,7 +18,7 @@ sidebar_position: 1
 
 You interact with AI every day—when your email filters out spam, when your phone recognizes your face, or when a website recommends products you might like.
 
-## AI: Different Flavors for Different Needs
+## AI: Different Types for Different Needs
 
 ### The Simple Way to Think About AI Types
 
@@ -36,7 +36,7 @@ You interact with AI every day—when your email filters out spam, when your pho
 
 - **Creating New Things:** Some AI (like ChatGPT) creates brand new content—like writing stories or making pictures based on your requests.
 
-## The AI Family: Key Definitions
+## Key Definitions
 
 ### Machine Learning (ML): Teaching Computers Without Programming Them
 
@@ -89,20 +89,4 @@ AI has different ways of learning:
   
 - **Deep Learning:** More complex learning that can handle things like recognizing faces in photos or understanding human language
   
-- **Brain-Inspired Learning:** AI systems that try to work a bit like our brains, with interconnected "neurons" passing information to each other
-
-## Why AI Matters Now
-
-AI isn't just future technology—it's already changing how we live and work:
-
-- Making everyday tasks faster (like searching for information)
-- Helping create content when you have writer's block
-- Answering questions in helpful, human-like ways
-- Personalizing experiences based on what you like
-- Solving problems that would take humans too long to figure out
-
-## Learn More
-
-This guide draws from trusted sources including:
-
-- **IBM AI Engineering Course** - A practical approach to understanding AI and machine learning: [IBM AI Engineering on Coursera](https://www.coursera.org/professional-certificates/ai-engineering)
+- **Brain-Inspired Learning:** AI systems that try to work a bit like our brains, with interconnected "neurons" passing information to each other.
