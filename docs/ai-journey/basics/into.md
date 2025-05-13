@@ -106,5 +106,3 @@ AI isn't just future technology—it's already changing how we live and work:
 This guide draws from trusted sources including:
 
 - **IBM AI Engineering Course** - A practical approach to understanding AI and machine learning: [IBM AI Engineering on Coursera](https://www.coursera.org/professional-certificates/ai-engineering)
-- Simplified explanations based on academic materials from leading institutions
-
