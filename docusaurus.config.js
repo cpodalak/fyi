@@ -104,10 +104,6 @@ const config = {
             title: 'Quick Links',
             items: [
               {
-                label: 'Learnings',
-                to: '/docs/quick-links',
-              },
-              {
                  label: 'Blog',
                  to: '/blog'
               },
