@@ -128,7 +128,7 @@ notes: >
 ```
 
 ## Templating with ytt
-`ytt` (part of the Carvel toolset) is a YAML templating engine that injects logic (loops, conditions, functions) into YAML.
+`ytt` is a simple YAML templating tool that lets you add logic to your YAML files without making them complex.
 
 ### Installation (macOS/Linux via Homebrew)
 ```bash
@@ -136,40 +136,7 @@ brew install ytt
 ```
 
 ### Basic Usage
-
-#### Template File (`template.yaml`)
-```yaml
-#@ load("@ytt:data", "data")
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: #@ data.values.name
-data:
-  message: "#@ data.values.msg"
-```
-
-#### Values File (`values.yaml`)
-```yaml
-#@data/values
----
-name: my-cm
-msg: "Hello, ytt!"
-```
-
-#### Render Command
-```bash
-ytt -f values.yaml -f template.yaml > output.yaml
-```
-
-#### Output (`output.yaml`)
-```yaml
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: my-cm
-data:
-  message: "Hello, ytt!"
-```
+[YTT Basics](https://ayling.fyi/docs/category/ytt-basics)
 
 For more examples and documentation, visit [Carvel ytt](https://carvel.dev/ytt/).
 
@@ -183,79 +150,6 @@ YAML itself does not natively support importing data from another YAML file. How
 
 3. **Third-Party Libraries**: Some libraries, like `ruamel.yaml` in Python, can be extended to support custom import logic.
 
-### Example with `ytt`
-
-Suppose you have two YAML files:
-
-`base.yaml`
-```yaml
-common:
-  adapter: postgres
-  timeout: 5000
-```
-
-`override.yaml`
-```yaml
-#@ load("@ytt:data", "data")
----
-<<: *data.values.common
-retries: 3
-```
-
-Render Command:
-```bash
-ytt -f base.yaml -f override.yaml > output.yaml
-```
-
-Output:
-```yaml
-common:
-  adapter: postgres
-  timeout: 5000
-retries: 3
-```
-
-#### Updated Examples with `ytt`
-
-Suppose you have two YAML files:
-
-`base.yaml`
-```yaml
-#@data/values
----
-common:
-  adapter: postgres
-  timeout: 5000
-  retries: 2
-```
-
-`override.yaml`
-```yaml
-#@ load("@ytt:data", "data")
----
-common:
-  <<: *data.values.common
-  retries: 5  # Override retries
-  debug: true
-```
-
-Render Command:
-```bash
-ytt -f base.yaml -f override.yaml > output.yaml
-```
-
-Output:
-```yaml
-common:
-  adapter: postgres
-  timeout: 5000
-  retries: 5
-  debug: true
-```
-
-This demonstrates how `ytt` can be used to merge and override YAML configurations effectively.
-
-### Summary
 While YAML does not natively support imports, tools like `ytt` or custom scripts can provide this functionality. This approach ensures modular and maintainable configurations.
 
 ## VS Code Extensions for YAML
@@ -292,10 +186,6 @@ While YAML does not natively support imports, tools like `ytt` or custom scripts
 - Validate against JSON Schema (many CLI tools exist).
 - Keep documents small to maintain readability.
 - Use CI linting (e.g., `yamllint`).
-
-## Further Resources
-
-- [YAML Tutorial](https://www.tutorialspoint.com/yaml/index.htm)
 
 YAML remains a dominant choice for config files and data exchange due to its readability and expressiveness. With tools like `ytt` for templating, VS Code extensions for editing, and robust Python libraries for parsing, you can build, manage, and validate YAML-based configurations efficiently.
 
